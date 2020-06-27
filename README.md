@@ -37,30 +37,38 @@ python augment_dataset.py
 ### Directories
 Before running any code, please set directories first.
 - ```BASE_DIR```: Path to "Runtime-Masking-and-Cleansing" folder.
-- ```TRAIN_DATA_DIR```: Path to training data.
-- ```TRAIN_LABEL_DIR```: Path to labels of training data.
-- ```AUG_DATA_DIR```: Path to save augmented training data.
-- ```EVAL_DATA_DIR```: Path to evaluation data.
-- ```EVAL_LABEL_DIR```: Path to label of evaluation data.
-- ```ATTACK_DATA_DIR```: Path to perturbed evaluation data.
+- ```TRAIN_DATA_DIR```: Path to training dataset.
+- ```TRAIN_LABEL_DIR```: Path to labels of training dataset.
+- ```AUG_DATA_DIR```: Path to augmented dataset.
+- ```AUG_FEATURES```: Path to features of augmented dataset. 
+- ```EVAL_DATA_DIR```: Path to evaluation dataset.
+- ```EVAL_LABEL_DIR```: Path to label of evaluation dataset.
+- ```EVAL_FEATURES```: Path to features of evaluation dataset.
+- ```ATTACK_DATA_DIR```: Path to perturbed evaluation dataset.
 - ```ATTACK_LABEL_DIR```: Path to the target label of perturbed evaluation data. Only use when evaluating targeted attack.
-
+- ```ATTACK_FEATURES```: Path to features of perturbed evaluation dataset.
 
 ### Hyperparameters
 Evaluate with different configurations:
 ```python
-EPSILON = 16/255
-EPS_ITERS = 1/255
-NB_ITERS = 100
+K = 2048
+EPOCHS = 100
+EARLY_STOP = 5
+LEARNING_RATE = 1e-5
 BUFFER_SIZE = 10000
 IMG_SIZE = 224
 RESIZE_SIZE = 256
 BATCH_SIZE = 64
 IMG_SHAPE = (IMG_SIZE, IMG_SIZE, 3)
+EPSILON = 16/255
+EPS_ITERS = 1/255
+NB_ITERS = 100
 ```
-- ```EPSILON```: Allowable perturbation when computing adversarial examples
-- ```EPS_ITERS```: Step size used in PGD attack
-- ```NB_ITERS```: Number of iterations used in PGD attack
+- ```K```: Hyperparameter in k-NN.
+- ```EARLY_STOP```: Early stop criteria.
+- ```EPSILON```: Allowable perturbation when computing adversarial examples.
+- ```EPS_ITERS```: Step size used in PGD attack.
+- ```NB_ITERS```: Number of iterations used in PGD attack.
 
 ## Dataset
 We use MNIST, CIFAR-10, and [ImageNet](http://www.image-net.org/) dataset in our paper. First two can be downloaded through TensorFlow API.
