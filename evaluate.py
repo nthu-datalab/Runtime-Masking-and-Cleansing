@@ -28,30 +28,6 @@ ATTACK_LABEL_DIR = ''
 # Features(hidden representations)
 ATTACK_FEATURES_DIR = ''
 
-# +
-BASE_DIR = '/home/nthudatalab1/Jimmy/RMC/ICML_377_runtime_masking_cleansing/ImageNet'
-# Original training dataset
-TRAIN_DATA_DIR = '/data/train_path.npy'
-TRAIN_LABEL_DIR = '/data/train_label.npy'
-# Augmented dataset
-AUG_DATA_DIR_1 = 'train_set_pgd_16_10_0.01(resnet152)'
-AUG_DATA_DIR_2 = 'train_set_pgd_16_30_0.005(resnet152)'
-AUG_DATA_DIR_3 = 'train_set_pgd_16_100_0.001(resnet152)'
-AUG_FEATURES_DIR = '/work/nthudatalab1/ImageNet/repre_resnet152v2_conv5_1_DB.npy'
-
-# Clean evaluation dataset
-EVAL_DATA_DIR = '/data/eval_path.npy'
-EVAL_LABEL_DIR = '/data/eval_label.npy'
-EVAL_FEATURES_DIR = ''
-
-# Adversarial perturbed evaluation dataset
-ATTACK_DATA_DIR = 'val_set_pgd_16_100_1_target(resnet152)'
-# Target attack label(used to calculate attack success rate)
-ATTACK_LABEL_DIR = '/data/target_label.npy'
-# Features(hidden representations)
-ATTACK_FEATURES_DIR = 'repre_resnet152_conv5_1_eval_16_target(100)'
-# -
-
 gpus = tf.config.experimental.list_physical_devices('GPU')
 if gpus:
     try:
