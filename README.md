@@ -34,6 +34,8 @@ cd prepare
 python augment_dataset.py
 ```
 
+To visualize the test data and its corresponding nearest neighbors, please refer to ```visualize.ipynb```.
+
 ### Directories
 Before running any code, please set directories first.
 - ```BASE_DIR```: Path to "Runtime-Masking-and-Cleansing" folder.
