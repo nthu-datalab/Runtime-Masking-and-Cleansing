@@ -14,7 +14,7 @@ The following figure illustrates the defense mechanism in RMC:
 3. Adapt the network with KNN
 4. Make predictions
 
-For more details, please refer to our [main paper](https://proceedings.icml.cc/static/paper_files/icml/2020/377-Paper.pdf), [supplementary materials](https://proceedings.icml.cc/static/paper_files/icml/2020/377-Supplemental.pdf), or [video](https://icml.cc/virtual/2020/paper/5817).
+For more details, please refer to our [main paper](https://proceedings.icml.cc/static/paper_files/icml/2020/377-Paper.pdf), [supplementary materials](https://proceedings.icml.cc/static/paper_files/icml/2020/377-Supplemental.pdf), or [video](https://icml.cc/virtual/2020/poster/5817).
 
 ## Installation
 Clone and install requirements.
