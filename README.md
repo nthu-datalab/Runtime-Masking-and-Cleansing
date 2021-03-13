@@ -1,5 +1,5 @@
 # Runtime-Masking-and-Cleansing (RMC)
-This is the repo for [Adversarial Robustness via Runtime Masking and Cleansing](https://proceedings.icml.cc/static/paper_files/icml/2020/377-Paper.pdf), Yi-Hsuan Wu, Chia-Hung Yuan, and Shan-Hung Wu, In Proceedings of ICML 2020. Our code is implemented in TensorFlow 2.0 using all the best practices.
+This is the repo for [Adversarial Robustness via Runtime Masking and Cleansing](http://proceedings.mlr.press/v119/wu20f/wu20f.pdf), Yi-Hsuan Wu, Chia-Hung Yuan, and Shan-Hung Wu, In Proceedings of ICML 2020. Our code is implemented in TensorFlow 2.0 using all the best practices.
 
 We devise a new defense method, called runtime masking and cleansing (RMC), to improve adversarial robustness. RMC adapts the network at runtime before making a prediction to dynamically mask network gradients and cleanse the model of the non-robust features inevitably learned during the training process due to the size limit of the training set.
 
@@ -14,7 +14,7 @@ The following figure illustrates the defense mechanism in RMC:
 3. Adapt the network with KNN
 4. Make predictions
 
-For more details, please refer to our [main paper](https://proceedings.icml.cc/static/paper_files/icml/2020/377-Paper.pdf), [supplementary materials](https://proceedings.icml.cc/static/paper_files/icml/2020/377-Supplemental.pdf), [video](https://icml.cc/virtual/2020/poster/5817), or [slide](http://www.cs.nthu.edu.tw/~shwu/pubs/shwu-icml-20-slides.pdf).
+For more details, please refer to our [main paper](https://proceedings.icml.cc/static/paper_files/icml/2020/377-Paper.pdf), [supplementary materials](http://proceedings.mlr.press/v119/wu20f/wu20f.pdf), [video](https://icml.cc/virtual/2020/poster/5817), or [slide](http://www.cs.nthu.edu.tw/~shwu/pubs/shwu-icml-20-slides.pdf).
 
 ## Installation
 Clone and install requirements.
