@@ -143,3 +143,16 @@ We use MNIST, CIFAR-10, and [ImageNet](http://www.image-net.org/) dataset in our
 </tr>
 </tbody>
 </table>
+
+## Citation
+If you find this code is helpful for your research, please cite our [ICML 2020 paper](http://proceedings.mlr.press/v119/wu20f/wu20f.pdf):
+```
+@inproceedings{wu2020adversarial,
+	title={Adversarial Robustness via Runtime Masking and Cleansing},
+	author={Wu, Yi-Hsuan and Yuan, Chia-Hung and Wu, Shan-Hung},
+	booktitle={International Conference on Machine Learning},
+	pages={10399--10409},
+	year={2020},
+	organization={PMLR}
+}
+```
